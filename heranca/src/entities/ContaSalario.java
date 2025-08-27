@@ -27,7 +27,7 @@ public class ContaSalario extends  ContaCorrente{
     }
 
     @Override
-    public void saque(double valor){
+    public final void saque(double valor){
         super.saque(valor);//metodo de saque igual o da ContaCorrente mas com o desconto da taxa de saque
         saldo -= 2.0; // especifico dessa conta
     }

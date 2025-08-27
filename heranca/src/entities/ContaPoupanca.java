@@ -1,6 +1,7 @@
 package entities;
 
-public class ContaPoupanca extends ContaCorrente{
+public final class ContaPoupanca extends ContaCorrente{//a plavara final diz que nenhuma outra classe pode herdar a
+    // classe ContaPoupanca.
 
     private double taxaDeJuros;
 
@@ -26,8 +27,11 @@ public class ContaPoupanca extends ContaCorrente{
     }
 
     @Override
-    public void saque(double valor){
+    public final void saque(double valor){//nenhum outro metodo poderá sobrescrever esse metodo
         saldo -= valor; //sobrescrevento o metodo saque da ContaCorrente porem sem um desconto de 5.0 por saque
     }
 
 }
+
+//o final serve para proteger a aplicaçao de inconsistencias pq se varios metodos forem sobnescritos
+//pode gerar lentidão.
