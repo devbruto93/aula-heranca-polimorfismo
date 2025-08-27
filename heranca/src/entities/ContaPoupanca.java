@@ -25,4 +25,9 @@ public class ContaPoupanca extends ContaCorrente{
         saldo += saldo * taxaDeJuros;
     }
 
+    @Override
+    public void saque(double valor){
+        saldo -= valor; //sobrescrevento o metodo saque da ContaCorrente porem sem um desconto de 5.0 por saque
+    }
+
 }

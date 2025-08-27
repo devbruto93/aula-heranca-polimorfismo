@@ -36,7 +36,7 @@ public class ContaCorrente {
     }
 
     public void saque(double valor){
-        saldo -= valor;
+        saldo -= valor + 5.0;
     }
 
     public void deposito(double valor){
