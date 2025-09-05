@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         /*
+        ###### Herença #####
         ContaCorrente cc1 = new ContaCorrente(1111, "Douglas", 5000.0);
         cc1.saque(100.0);
         System.out.println(cc1.getSaldo());
@@ -22,6 +23,7 @@ public class Main {
         System.out.println(cc3.getSaldo());
          */
 
+        /*
         //APLICANDO O POLIMORFISMO
         ContaCorrente exemplo1 = new ContaCorrente(1111, "Douglas", 1000.0);
         ContaCorrente exemplo2 = new ContaPoupanca(1112,"Natalia", 1000.0, 0.01);
@@ -31,5 +33,13 @@ public class Main {
 
         System.out.println("Saldo atual do Douglas " + exemplo1.getSaldo());
         System.out.println("Saldo atual da Natalia " + exemplo2.getSaldo());
+         */
+
+        //Conta Corrente abstrata
+        //ContaCorrente cc1 = new ContaCorrente(1111, "Douglas", 2000.0);//A classe ContaCorrente nao pode mais ser instanciada pois agora ela é abstrata, ao tirar o comentario verá o erro
+        ContaCorrente cc2 = new ContaPoupanca(1112, "Natalia", 3000.0, 0.01);
+        ContaCorrente cc3 = new ContaSalario(1113, "Vinicius", 4000.0,700.0);
+
+
     }
 }

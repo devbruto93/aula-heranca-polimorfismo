@@ -1,6 +1,6 @@
 package entities;
 
-public class ContaCorrente {
+public abstract class ContaCorrente {
 
     private int numeroDaConta;
     private String titular;
